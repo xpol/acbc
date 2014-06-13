@@ -4,6 +4,8 @@
 #include <string>
 #include <vector>
 #include <set>
+#include <iterator>     // std::ostream_iterator
+#include <algorithm>	// std::copy
 
 #pragma warning(disable: 4819)
 #include "FreeImage.h"
