@@ -4,6 +4,8 @@ enable_testing()
 
 if (MSVC)
 	add_definitions(/D "_CRT_SECURE_NO_WARNINGS")
+else (MSVC)
+	set(CMAKE_CXX_FLAGS "-std=c++0x")
 endif (MSVC)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/lib")
